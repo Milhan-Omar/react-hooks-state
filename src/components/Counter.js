@@ -6,8 +6,22 @@ function Counter() {
   function increment() {
     setCount(count + 1);
   }
+  // function increment(){
+  //   setCount(prevState =>{
+  //     return [...prevState,`${count.lenght + 1}`]
+  //   })
+  // }
 
-  return <button onClick={increment}>I have been clicked {count} times</button>;
+
+
+  return <div onClick={increment} 
+  style={{
+    display: 'flex', 
+    justifyContent: "center",
+    alignItems: "center",
+    fontSize: '500px'
+     }}
+   >{count}</div>;
 }
 
 export default Counter;
